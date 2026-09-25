@@ -1,0 +1,113 @@
+/*
+  Josh's Custom CSS Reset
+  https://www.joshwcomeau.com/css/custom-css-reset/
+*/
+
+*,
+*::before,
+*::after {
+    box-sizing: border-box;
+}
+
+*:not(dialog) {
+    margin: 0;
+}
+
+@media (prefers-reduced-motion: no-preference) {
+    html {
+        interpolate-size: allow-keywords;
+    }
+}
+
+body {
+    line-height: 1.5;
+    -webkit-font-smoothing: antialiased;
+}
+
+img,
+picture,
+video,
+canvas,
+svg {
+    display: block;
+    max-width: 100%;
+}
+
+input,
+button,
+textarea,
+select {
+    font: inherit;
+}
+
+p,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+    overflow-wrap: break-word;
+}
+
+p {
+    text-wrap: pretty;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+    text-wrap: balance;
+}
+
+#root,
+#__next {
+    isolation: isolate;
+}
+
+
+/*                                               */
+
+* {
+    margin: 0px;
+    box-sizing: border-box;
+    line-height: 1.5rem;
+}
+
+:root {
+    font-family: sans-serif;
+    background-image: url("./images/bg-skyline.svg");
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+body {
+    margin: 2vh 0;
+    min-height: 95vh;
+
+    display: flex;
+    flex-flow: column wrap;
+    align-items: center;
+
+    color: white;
+}
+
+.container {
+    display: flex;
+    flex-flow: column wrap;
+    align-items: center;
+    text-align: center;
+
+    width: 80%;
+    margin: 10px 0;
+    padding: 1rem;
+
+    border: 3px solid rgba(255, 255, 255, 0.29);
+    background-color: rgba(222, 217, 217, 0.201);
+    backdrop-filter: blur(2px);
+    box-shadow: inset 0px 0px 8px 1px rgb(255, 253, 253);
+}
