@@ -1,7 +1,4 @@
-/*
-  Josh's Custom CSS Reset
-  https://www.joshwcomeau.com/css/custom-css-reset/
-*/
+/* === 1. RESET — https://www.joshwcomeau.com/css/custom-css-reset/ === */
 
 *,
 *::before,
@@ -69,45 +66,101 @@ h6 {
 }
 
 
-/*                                               */
-
-* {
-    margin: 0px;
-    box-sizing: border-box;
-    line-height: 1.5rem;
-}
+/* === 2. BASE === */
 
 :root {
     font-family: sans-serif;
-    background-image: url("./images/bg-skyline.svg");
-    background-position: center;
-    background-repeat: no-repeat;
-    background-size: cover;
+
+    /* Layer 1: logo centered on left edge (offset = -width / 2); layer 2: full background */
+    background-image:
+        url("./images/logo.svg"),
+        url("./images/bg.svg");
+    background-position: -750px center, center;
+    background-size: 1500px auto, cover;
+    background-repeat: no-repeat, repeat;
+    background-attachment: scroll, fixed;
 }
 
 body {
-    margin: 2vh 0;
-    min-height: 95vh;
-
     display: flex;
-    flex-flow: column wrap;
-    align-items: center;
-
-    color: white;
+    min-height: 100vh;
 }
 
-.container {
+
+/* === 3. LAYOUT === */
+
+.side-header {
+    flex: 1;
+}
+
+.side-body {
+    flex: 4;
+    display: flex;
+    flex-flow: column wrap;
+}
+
+.side-container {
+    flex: 1 1 0;
     display: flex;
     flex-flow: column wrap;
     align-items: center;
-    text-align: center;
-
-    width: 80%;
-    margin: 10px 0;
     padding: 1rem;
+    text-align: center;
+}
 
+
+/* === 4. COMPONENTS === */
+
+.header-text {
+    position: relative;
+    top: 200px;
+    text-align: center;
+    color: white;
+    background-color: rgba(0, 0, 0, 0.334);
+}
+
+.glassmorphism-effect {
     border: 3px solid rgba(255, 255, 255, 0.29);
     background-color: rgba(222, 217, 217, 0.201);
     backdrop-filter: blur(2px);
-    box-shadow: inset 0px 0px 8px 1px rgb(255, 253, 253);
+    box-shadow: inset 0 0 8px 1px rgb(255, 253, 253);
+}
+
+
+/* === 5. FORM === */
+
+form {
+    flex: 3;
+    padding: 16px;
+    background-color: white;
+}
+
+.form-row {
+    flex: 1;
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: center;
+}
+
+.input-container {
+    display: flex;
+    flex-direction: column;
+    height: 90%;
+}
+
+label {
+    width: 50%;
+    align-content: stretch;
+    padding: 16px;
+}
+
+input {
+    width: 100%;
+}
+
+
+/* === 6. DEBUG — delete before shipping === */
+
+.side-body {
+    border: 1px dotted gray;
 }
