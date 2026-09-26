@@ -22,4 +22,5 @@ This project took way longer than anticipated but thats how most projects go.  T
 - The importance of drafting a UI before implementation (WOULD OF MADE MY LIFE EASIER!)
 - Styling using Psuedo elements for responsive feedback
 - House MD is a good show
+
 I need to focus on laying out my containers before putting any content in them.  Repeatedly messed with layout components causing a cascade of necessary changes to ALL CONTENT of the site.
