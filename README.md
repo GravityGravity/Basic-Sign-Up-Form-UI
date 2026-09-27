@@ -2,7 +2,7 @@
 For practice only!
 A responsive sign-up form built with HTML and CSS.
 
-<img src="screenshot.png" alt="Sign up form preview" width="600">
+<img src="images/screenshot.png" alt="Sign up form preview" width="600">
  
 ## Features
  
@@ -17,7 +17,7 @@ https://gravitygravity.github.io/Basic-Sign-Up-Form-UI/
  
 | Focused input | Valid input | Invalid input |
 | :---: | :---: | :---: |
-| ![Focused input](focused-input.png) | ![Valid input with checkmark](valid-input.png) | ![Invalid input with cross](invalid-input.png) |
+| ![Focused input](images/focused-input.png) | ![Valid input with checkmark](images/valid-input.png) | ![Invalid input with cross](images/invalid-input.png) |
 
 ### Reflection as a dev
 This project took way longer than anticipated but thats how most projects go.  Took around a full day of work.
