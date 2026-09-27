@@ -1,15 +1,23 @@
 # Library Sign Up Form Mock-up
 For practice only!
 A responsive sign-up form built with HTML and CSS.
+
+![Sign up form preview](screenshot.png)
  
 ## Features
  
-- **Two-column layout:** Built with Flexbox. Each row splits into equal-width fields, and rows wrap on narrow screens.
-- **Fluid typography:** Font sizes scale with the viewport through `clamp()` and CSS custom properties.
-- **Live validation feedback:** `:user-valid` and `:user-invalid` show ✓ and ✗ icons on each field. The icons are drawn with `::after` on a wrapper `div` selected via `:has()`, and they are hidden while a field has focus.
-- **Required fields:** Uses native HTML5 constraint validation, such as `required` and `type="email"`.
- 
+- Responsive two-column layout
+- Font sizes that scale with the screen
+- ✓ and ✗ icons that show whether each field is valid
+- Required-field validation
+
 https://gravitygravity.github.io/Basic-Sign-Up-Form-UI/
+
+## Validation
+ 
+| Focused input | Valid input | Invalid input |
+| :---: | :---: | :---: |
+| ![Focused input](focused-input.png) | ![Valid input with checkmark](valid-input.png) | ![Invalid input with cross](invalid-input.png) |
 
 ### Reflection as a dev
 This project took way longer than anticipated but thats how most projects go.  Took around a full day of work.
