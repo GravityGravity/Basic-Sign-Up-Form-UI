@@ -1,9 +1,23 @@
 # Library Sign Up Form Mock-up
 For practice only!
+A responsive sign-up form built with HTML and CSS.
 
-#### Link
+<img src="screenshot.png" alt="Sign up form preview" width="600">
+ 
+## Features
+ 
+- Responsive two-column layout
+- Font sizes that scale with the screen
+- ✓ and ✗ icons that show whether each field is valid
+- Required-field validation
+
 https://gravitygravity.github.io/Basic-Sign-Up-Form-UI/
 
+## Validation
+ 
+| Focused input | Valid input | Invalid input |
+| :---: | :---: | :---: |
+| ![Focused input](focused-input.png) | ![Valid input with checkmark](valid-input.png) | ![Invalid input with cross](invalid-input.png) |
 
 ### Reflection as a dev
 This project took way longer than anticipated but thats how most projects go.  Took around a full day of work.
@@ -15,12 +29,18 @@ This project took way longer than anticipated but thats how most projects go.  T
 - Attempting to format my input boxes cleanly with the label ontop of the input.  This is due to trying to keep html lean as possible but has led to alot of time wasted.  Spent few hours trying to prevent wrapping my labels + input elements in a div.  Actually originally wrapped my inputs in my label element which was silly.  Ultimately did it anyways fixing my input box scaling issues.  Why I didnt do it sooner i dont even know...
 - Scaling fonts is a pain in the ass!  Pardon my language 👮
 
-  #### Whatd I learn
+#### Whatd I learn
 - Font scaling, margin scaling
 - Using different CSS measurement units like ch, rem, em, and px
 - Reinforcing difficult flex concepts
 - The importance of drafting a UI before implementation (WOULD OF MADE MY LIFE EASIER!)
 - Styling using Psuedo elements for responsive feedback
 - House MD is a good show
+
+#### What could be improved for this project
+- Add Regular expression validation to inputs
+- Add invalid input messages to inform user
+- Add better visual indicators to 'required' inputs
+- Typography could be improved
 
 I need to focus on laying out my containers before putting any content in them.  Repeatedly messed with layout components causing a cascade of necessary changes to ALL CONTENT of the site.
