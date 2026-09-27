@@ -2,7 +2,7 @@
 For practice only!
 A responsive sign-up form built with HTML and CSS.
 
-![Sign up form preview](screenshot.png)
+<img src="screenshot.png" alt="Sign up form preview" width="600">
  
 ## Features
  
